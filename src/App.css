@@ -1,0 +1,179 @@
+/* src/styles/variables.css */
+
+:root {
+    /* Colors */
+    --color-primary-1: #4268B1;
+    --color-primary-2: #2E2E88;
+    --color-primary-3: #75BEE9;
+    --color-primary-4: #7595CC;
+    
+    --color-secondary-1: #F8F9FA;
+    --color-secondary-2: #F1F3F5;
+    --color-secondary-3: #E9ECEF;
+    --color-secondary-4: #DEE2E6;
+    --color-secondary-5: #CED4DA;
+    --color-secondary-6: #ACB5BD;
+    --color-secondary-7: #858E96;
+    --color-secondary-8: #495057;
+    --color-secondary-9: #343A40;
+    --color-secondary-10: #212529;
+    
+    --color-success: #38C976;
+    --color-warning: #FCC132;
+    --color-danger: #FF3819;
+    --color-info: #2AB0FC;
+
+    --color-success-dark: #2DA15F;
+    --color-warning-dark: #CF9F29;
+    --color-danger-dark: #C92D14;
+    --color-info-dark: #228DC9;
+
+    --color-text-primary: #0A121A;
+    --color-text-secondary: #858E96;
+    --color-text-disabled: #D9D9D9;
+    
+    --color-background: #FFFFFF;
+    --color-background-alt: #F5F5F5;
+    
+    /* Spacing */
+    --spacing-xxs: 0.25rem;  /* 4px */
+    --spacing-xs: 0.5rem;    /* 8px */
+    --spacing-sm: 0.75rem;   /* 12px */
+    --spacing-md: 1rem;      /* 16px */
+    --spacing-lg: 1.5rem;    /* 24px */
+    --spacing-xl: 2rem;      /* 32px */
+    --spacing-xxl: 3rem;     /* 48px */
+    
+    /* Typography */
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-heading: var(--font-family-base);
+    
+    --font-size-xs: 0.625rem;   /* 10px */
+    --font-size-sm: 0.75rem;    /* 12px */
+    --font-size-md: 0.875rem;   /* 14px */
+    --font-size-lg: 1rem;       /* 16px */
+    --font-size-xl: 1.125rem;   /* 18px */
+    
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+    
+    --line-height-tight: 1.2;
+    --line-height-base: 1.5;
+    --line-height-loose: 1.8;
+
+    --inputfield-height: 40px;
+
+    /* Icon size */
+    --icon-size-sm: 0.625rem;   /* 10px */
+    --icon-size-md: 0.75rem;    /* 12px */
+    --icon-size-lg: 0.875rem;   /* 14px */
+
+    /* Borders */
+    --border-radius-sm: 0.25rem; /* 4px */
+    --border-radius-md: 0.5rem;  /* 8px */
+    --border-radius-lg: 1rem;    /* 16px */
+    
+    --border-width-thin: 1px;
+    --border-width-thick: 2px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+    /* Transitions */
+    --transition-disabled: 0ms;
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+    
+    /* Z-index */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1100;
+    --z-index-fixed: 1200;
+    --z-index-modal-backdrop: 1300;
+    --z-index-modal: 1400;
+    --z-index-popover: 1500;
+    --z-index-tooltip: 1600;
+  }
+
+.App{
+  background: lightblue;
+  width: 100vw;
+  height: 100vh;
+  padding: 5% 5%;
+}
+.container{
+  height: 90%;
+  width: 100%;
+  background: rgb(10, 74, 95);
+  border-radius: 8px;
+}
+.header{
+  height: 40px;
+  align-items: center;
+  display: flex;
+}
+.header-text{
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.body{
+  height: calc(100% - 40px);
+  width: calc(100% - 48px);
+  background: lightcyan;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  overflow-y: auto;
+  justify-self: center;
+  align-self: center;
+  height: 90%;
+}
+.feature-card{
+  width: 158px;
+  height: 188px;
+  background: lightblue;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px gray;
+  cursor: pointer;
+}
+.feature-card:hover{
+  box-shadow: 6px 6px 6px gray, 10px 10px 10px lightgray;
+  transform: scale(1.05);
+}
+.feature-title{
+  margin: 0;
+  height: 30px;
+  margin-left: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.feature-image{
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.p-disabled{
+  font-weight: bold;
+  color: black;
+}
+.p-field .p-field-error-section{
+  display: none !important;
+}
+.row .p-field{
+  height: 57px !important;
+}

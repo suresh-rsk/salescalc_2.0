@@ -1,0 +1,194 @@
+  /* ===== BASE CONTAINER ===== */
+  .p-field {
+    position: relative !important; 
+    height: 75px !important;
+    box-sizing: border-box !important;
+  }
+  .p-field .p-component{
+    padding-left: 0;
+  }
+  .p-inputtext:enabled:focus {
+    border-color: var(--color-primary-1);
+    box-shadow: var(--shadow-md)
+  }
+  input.p-component{
+    border-radius: var(--border-radius-md);
+  }
+  /* ===== SECTION CONTAINERS ===== */
+  .p-field-label-section {
+    height: 14px !important;
+    display: block !important;
+    position: relative !important;
+    margin-bottom: 4px;
+  }
+  
+  .p-field-input-section {
+    position: relative !important;
+    height: var(--inputfield-height) !important;
+    margin-bottom: 0px !important;
+    display: block !important;
+  }
+  
+  .p-field-error-section {
+    height: 18px !important;
+    position: relative !important;
+    display: block !important;
+  }
+  
+  /* ===== LABELS ===== */
+  .p-field-label {
+    font-weight: var(--font-weight-bold) !important;
+    color: var(--color-secondary-7) !important;
+    margin-bottom: 0 !important;
+    padding-left: 4px !important;
+    display: inline-block !important;
+  }
+  
+  .p-float-label {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .p-float-label label {
+    position: absolute !important;
+    pointer-events: none !important;
+    top: calc(50% + 4px) !important;
+    left: 4px !important;
+    transform: translateY(-50%) !important;
+    transition: all 0.2s ease !important;
+    color: var(--color-secondary-7) !important;
+    margin: 0 !important;
+    padding: 0 0 0 5px !important;
+  }
+  
+  .p-float-label input.p-filled ~ label,
+  .p-float-label .p-inputwrapper-filled ~ label,
+  .p-float-label input:focus ~ label,
+  .p-float-label .p-inputwrapper-focus ~ label,
+  .p-float-label input:-webkit-autofill ~ label {
+    top: -0.75rem !important;
+    font-size: var(--font-size-md) !important;
+    background-color: transparent !important; 
+    left: 4px !important;
+    transform: translateY(0) !important;
+  }
+  .p-float-label .p-inputwrapper-focus ~ label{
+    padding: 0 !important;
+  }
+  
+  .p-error-indicator {
+    color: var(--color-danger) !important;
+    margin-left: 0.25rem !important;
+  }
+  
+  /* ===== INPUT FIELDS - GENERAL ===== */
+  .p-inputtext,
+  .p-inputnumber-input {
+    height: var(--inputfield-height) !important;
+    width: 100% !important;
+    font-size: var(--font-size-md) !important;
+    padding: 0.5rem 30px 0.5rem 10px !important;
+  }
+  
+  /* ===== CLEAR BUTTON ===== */
+  .p-input-icon-right {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+  }
+  
+  .p-input-icon-right > i {
+    position: absolute !important;
+    right: 8px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    cursor: pointer;
+    color: var(--color-secondary-7) !important;
+    z-index: 10 !important;
+    text-align: center;
+    width: 16px !important;
+    height: 16px !important;
+    line-height: 16px !important;
+    font-size: var(--icon-size-md) !important;
+  }
+  .p-input-icon-right .pi-search::before, .p-input-icon-right i{
+    cursor: default;
+  }
+  /* ===== ERROR DISPLAY ===== */
+  .p-field-error {
+    color: var(--color-danger) !important;
+    font-size: var(--font-size-md) !important;
+    padding-left: 4px !important;
+    display: block !important;
+    line-height: 18px !important;
+    height: 18px !important;
+  }
+  
+  .p-invalid.p-inputtext,
+  .p-invalid .p-inputnumber-input {
+    border-color: var(--color-danger) !important;
+  }
+  
+  /* ===== NUMBER AND CURRENCY INPUTS ===== */
+  /* Target the container */
+  .p-inputnumber {
+    width: 100% !important;
+    height: var(--inputfield-height) !important;
+    display: block !important;
+  }
+  
+  /* Target the input field specifically */
+  .p-inputnumber .p-inputnumber-input,
+  .p-inputnumber .p-inputtext {
+    width: 100% !important;
+    height: var(--inputfield-height) !important;
+    text-align: left !important;
+  }
+  
+  /* Super specific selectors for currency fields */
+  .p-field-currency .p-field-input-section .p-input-icon-right .p-inputnumber,
+  .p-field-number .p-field-input-section .p-input-icon-right .p-inputnumber {
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  .p-field-currency .p-field-input-section .p-input-icon-right .p-inputnumber .p-inputnumber-input,
+  .p-field-number .p-field-input-section .p-input-icon-right .p-inputnumber .p-inputnumber-input {
+    width: 100% !important;
+  }
+  
+  /* Currency symbol positioning if needed */
+  .p-inputnumber-currency {
+    position: absolute !important;
+    left: 4px !important;
+  }
+  
+  /* When currency symbol is present, add extra padding */
+  .p-inputnumber.p-inputnumber-currency-mode .p-inputnumber-input {
+    padding-left: 20px !important;
+  }
+  
+  /* Handle overflow in currency fields */
+  .p-field-currency .p-inputnumber-input {
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+  }
+  
+  /* Ensure clear button appears correctly in currency fields */
+  .p-field-currency .p-input-icon-right > i {
+    z-index: 20 !important; /* Higher z-index to appear above currency symbols */
+  }
+
+  .p-field.standalone .p-field-label-section, .p-field.standalone .p-field-error-section{
+    display: none !important;
+  }
+  .p-field.standalone{
+    height: var(--inputfield-height) !important;
+  }
+  .p-field.standalone .p-input-icon-left, .p-field.standalone .p-input-icon-right{
+    position: unset !important;
+  }

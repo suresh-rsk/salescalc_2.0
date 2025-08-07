@@ -1,0 +1,198 @@
+/* Accordion styles */
+
+.p-accordion-header{
+    height: 50px !important;
+    background: var(--color-secondary-1);
+}
+.p-accordion-header a.p-accordion-header-link{
+    height: 100%;
+}
+.p-accordion-header-link i{
+    margin: 0 10px;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link{
+    border-radius: var(--border-radius-md);
+}
+.p-accordion-tab{
+    margin-bottom: 5px;
+}
+.p-toggleable-content .p-accordion-content{
+    padding: 5px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.upload-select-button{
+    width: 100%;
+    height: 76px !important;
+    background: transparent !important;
+
+}
+.upload-select-button .p-button-label, .upload-select-button .p-button-icon{
+    color: var(--color-primary-1) !important;
+    position: absolute;
+}
+.upload-select-button .p-button-label{
+    bottom: 15px;
+    font-weight: var(--font-weight-normal);
+}
+.upload-select-button .p-button-icon{
+    font-size: 20px;
+    top:15px;
+}
+.p-fileupload-row img{
+    display: none;
+}
+.p-fileupload-row div:first-child{
+    width: calc(100% - 50px);
+}
+.p-fileupload-row div:last-child{
+    width: 50px;
+    position: absolute;
+    right: 0;
+}
+.p-fileupload-row div:last-child button{
+    background: transparent !important;
+    border: none;
+}
+.p-fileupload-row div:last-child button svg{
+    color: var(--color-secondary-7);
+    position: absolute;
+}
+.p-fileupload-filename{
+    font-size: var(--font-size-md);
+    height: 20px !important;
+}
+.p-fileupload-row{
+    background: var(--color-secondary-3);
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 50px;
+}
+.p-fileupload.p-fileupload-advanced{
+    position: relative;
+}
+.p-fileupload-row span{
+    display: none !important;
+}
+.p-fileupload-content{
+    border: none;
+    position: absolute;
+    width: 100%;
+    bottom: -75px;
+}
+.p-progressbar-determinate{
+    background: transparent;
+}
+/* Common Styles */
+.footer-buttons, .footer-buttons-large{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-background);
+}
+.footer-buttons{
+    height: 50px;
+    padding: 5px;
+}
+.footer-buttons-large{
+    height: 70px;
+    padding: 10px 25px;
+    border-top: 1px solid var(--color-secondary-5);
+}
+.footer-buttons-large button{
+    align-self: center;
+}
+
+.section-label{
+    line-height: var(--line-height-base);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    height: 25px;
+}
+.hide{
+    display: none !important;
+}
+
+.right-aligned .dialog-footer{
+    justify-content: right !important;
+}
+.separator .p-dialog-footer{
+    border-top: 1px solid var(--color-secondary-4) !important;
+}
+
+.input-row-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.input-row-2 .p-field{
+    width: 49%;
+}
+
+/* Scrollbar styles */
+.thin-scrollbar::-webkit-scrollbar, .thin-scrollbar::-webkit-scrollbar{
+    width: 6px;
+}
+.thin-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-secondary-1);
+}
+  
+.thin-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-6);
+    border-radius: 3px;
+}
+  
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary-7);
+  }
+
+/*Tab component styles*/
+.p-tabview-nav-content{
+    padding: 0 0.5rem;
+}
+ul.p-tabview-nav{
+    width: 100%;
+    gap: 0.5rem;
+    border: none;
+}
+li.p-unselectable-text {
+    width: 100%;
+}
+li.p-unselectable-text a{
+    font-weight: var(--font-weight-normal);
+}
+li.p-unselectable-text.p-tabview-selected.p-highlight a{
+    color: var(--color-primary-1);
+    border-bottom: 2px solid var(--color-primary-1);
+    font-weight: var(--font-weight-bold);
+}
+li.p-unselectable-text a >span{
+    margin: auto;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.p-tabview, .p-tabview-panels{
+    height: 100%;
+}
+
+/* Dialog overlay*/
+.p-dialog-mask.p-component-overlay{
+    z-index: 2000 !important;
+}
+/* .p-dropdown-panel{
+    z-index: 3200 !important;
+} */
+
+.ellipsis{
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+}

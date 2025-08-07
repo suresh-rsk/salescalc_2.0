@@ -1,0 +1,68 @@
+.p-dialog.p-component{
+    background: var(--color-secondary-1);
+}
+.small.p-dialog{
+    min-height: 6rem !important;
+    width: 26rem !important;
+}
+.medium.p-dialog{
+    /* min-width: 30%;
+    min-height: 60%; */
+    width: 80%;
+}
+.large.p-dialog{
+    width: 60%;
+    min-width: 40rem;
+    height: 90%;
+}
+.extra-large.p-dialog{
+    width: 60%;
+    min-width: 40rem;
+    height: 90%;
+}
+.p-dialog-content{
+    all: unset;
+    background: transparent;
+    padding: 1rem !important;
+    height: 100%;
+    overflow-y: auto;
+}
+.dialog-footer, .p-dialog-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 1px solid var(--color-secondary-5);
+    padding-top: 8px;
+}
+.p-dialog-footer{
+    padding: 10px;
+}
+.p-dialog-header{
+    background: var(--color-primary-1);
+    padding: 10px;
+}
+.p-dialog-title{
+    color: var(--color-secondary-1) !important;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+}
+.dialog-icon-message{
+    display: flex;
+}
+.dialog-icon{
+    width: 2.5rem;
+    padding: 0.25rem;
+}
+.dialog-icon i{
+    font-size: 2rem;
+}
+.dialog-message{
+    padding: 0.25rem;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover{
+    background: transparent !important;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon{
+    color: var(--color-secondary-1);
+}

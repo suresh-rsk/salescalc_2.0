@@ -1,0 +1,71 @@
+.date-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.date-field-wrapper.standalone {
+  margin-bottom: 0;
+}
+
+.date-field-label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color, #495057);
+}
+
+.date-field-wrapper .p-calendar {
+  width: 100%;
+  display: flex;
+}
+
+.date-field-wrapper .p-inputtext {
+  flex: 1;
+  width: 100%;
+}
+
+.date-field-error {
+  color: var(--error-color, #f44336);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  min-height: 1.25rem;
+}
+
+.p-error-indicator {
+  color: var(--error-color, #f44336);
+  margin-left: 0.25rem;
+}
+
+/* Style for calendar button */
+.date-field-wrapper .p-datepicker-trigger {
+    background-color: var(--color-secondary-2);
+    padding: 0;
+    color: var(--color-secondary-7) !important;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 7px 7px 0;
+    position: absolute;
+    right: 0;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    scrollbar-width: none;
+    gap: 0;
+}
+
+.date-field-wrapper .p-datepicker-trigger:active {
+  background-color: #dcdcdc;
+}
+
+/* Improve styling for invalid state */
+.p-calendar.p-invalid .p-inputtext {
+  border-color: var(--error-color, #f44336);
+}
+
+.p-datepicker {
+    width: fit-content !important;
+    padding: 5px;
+}
+.p-datepicker-buttonbar button{
+    color: var(--color-secondary-8) !important;
+}
